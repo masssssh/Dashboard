@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -26,25 +27,30 @@
 
             <div class="my-projects">
                 <h3>MY PROJECTS</h3>
+                <button class="new-project-btn"><img src="./images/add-square.svg" alt="add"></button>
                 <ul>
-                    <li><a href="#"><span class="dot green"></span> Mobile App</a></li>
-                    <li><a href="#"><span class="dot orange"></span> Website Redesign</a></li>
-                    <li><a href="#"><span class="dot purple"></span> Design System</a></li>
-                    <li><a href="#"><span class="dot blue"></span> Wireframes</a></li>
+                    <li><a href="#"><span class="dot-green"></span> Mobile App</a></li>
+                    <li><a href="#"><span class="dot-orange"></span> Website Redesign</a></li>
+                    <li><a href="#"><span class="dot-purple"></span> Design System</a></li>
+                    <li><a href="#"><span class="dot-blue"></span> Wireframes</a></li>
                 </ul>
             </div>
 
-            <button class="new-project-btn"><img src="./images/add-square.svg" alt="add"></button>
+            
         
             <div class="notice">
-                <img src="./images/lamp-on.svg" alt="lamp">
-                <h3>Thoughts Time</h3>
-                <p>We don’t have any notice for you, till then you can share your thoughts with your peers.</p>
-                <button type="button">Write a message </button>
+                <div class="lamp">
+                    <img src="./images/lamp-on1.svg" alt="lamp">
+                </div>
+                <div class="notice-content">
+                    <h3>Thoughts Time</h3>
+                    <p>We don’t have any notice for you, till then you can share your thoughts with your peers.</p>
+                    <button type="button" class="notice-btn">Write a message </button>
+                </div>
             </div>
 
         </aside>
-
+        <div class="main">
         <header class="header">
             
             <form class="search" action="#" method="get">
@@ -59,8 +65,8 @@
                 
                 <div class="profile">
                     <div class="info">
-                        <p>Anima Agrawal</p>
-                        <p>U.P, India</p>
+                        <p class="name">Anima Agrawal</p>
+                        <p class="location">U.P, India</p>
                     </div>
 
                 <img src="./images/Mask Group.svg" alt="photo">
@@ -77,11 +83,11 @@
                 <button><img src="./images/Group 641.svg" alt="invite"><img src="./images/Group 642.svg" alt="friends"></button>
             </div>
 
-            <div class="filters">
+            <nav class="filters">
                 <button type="button"><img src="./images/filter.svg" alt="filter">Filter<img src="./images/arrow-down.svg" alt="button"></button>
                 <button type="button"> <img src="./images/calendar.svg" alt="calendar">  Today<img src="./images/arrow-down.svg" alt="button"></button>
                 <button type="button"><img src="./images/profile-2user.svg" alt="user">Share<img src="./images/arrow-down.svg" alt="button"></button>
-            </div>
+            </nav>
 
             <div class="view-mods">
                 <button class="position1"><img src="./images/Group 612.svg" alt="position"></button>
@@ -190,6 +196,7 @@
                 </article>
             </section>
     </main>
+    </div>
     </div>
 </body>
 </html>
