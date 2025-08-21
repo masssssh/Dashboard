@@ -76,20 +76,21 @@
         </header>
 
         <section class="page-header">
-            <h1>Mobile App</h1>
             <div class="page-action">
+                <h1>Mobile App</h1>
                 <button><img src="./images/arrow-square-up.svg" alt="pen"></button>
                 <button><img src="./images/Group 626.svg" alt="copy"></button>
-                <button><img src="./images/Group 641.svg" alt="invite"><img src="./images/Group 642.svg" alt="friends"></button>
+                <button class="invite-btn"><img src="./images/Frame 646.svg" alt="invite"></button>
             </div>
 
             <nav class="filters">
-                <button type="button"><img src="./images/filter.svg" alt="filter">Filter<img src="./images/arrow-down.svg" alt="button"></button>
-                <button type="button"> <img src="./images/calendar.svg" alt="calendar">  Today<img src="./images/arrow-down.svg" alt="button"></button>
-                <button type="button"><img src="./images/profile-2user.svg" alt="user">Share<img src="./images/arrow-down.svg" alt="button"></button>
+                <button type="button"><img class="filter-img" src="./images/filter.svg" alt="filter">Filter<img class="filter-open" src="./images/arrow-down2.svg" alt="button"></button>
+                <button type="button"> <img class="filter-img" src="./images/calendar.svg" alt="calendar">  Today<img class="filter-open" src="./images/arrow-down2.svg" alt="button"></button>
+                <div class="share-btn"><button type="button"><img class="filter-img" src="./images/profile-2user.svg" alt="user" style="height: 16px;">Share<img class="filter-open" src="./images/arrow-down2.svg" alt="button"></button></div>
             </nav>
 
             <div class="view-mods">
+                <span class="divider">a</span>
                 <button class="position1"><img src="./images/Group 612.svg" alt="position"></button>
                 <button class="position2"><img src="./images/Group 611.svg" alt="position"></button>
             </div>
@@ -99,99 +100,156 @@
         <main class="kanban">
 
             <section class="kanban-column">
-                <header>
+                <header class="to-do">
                     <img src="./images/Ellipse 11.svg" alt="ellipse">
                     <h2>To Do</h2>
                     <span class="count">4</span>
-                    <button><img src="./images/add-square.svg"></button></header>
+                    <button class="to-do-button">+</button></header>
 
              <article class="task">
-                <span class="priority-low">Low</span>
+                <div class="tasks-header">
+                    <span class="priority-low">Low</span>
                     <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
                     <h3>Brainstorming</h3>
                     <p>Brainstorming brings team members' diverse experience into play.</p>
                     <footer>
                         <img src="./images/Group 633.svg" alt="comments">
-                        <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                        <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">12 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">0 files</a>
                     </footer>
              </article>
             
             <article class="task">
-                <span class="priority-high">High</span>
-                <button><img src="./images/_. ..svg" alt="more"></button>
+                <div class="tasks-header">
+                    <span class="priority-high">High</span>
+                    <button><img src="./images/_. ..svg" alt="more"></button>
+                </div>
                 <h3>Research</h3>
                 <p>User research helps you to create an optimal product for users.</p>
                 <footer>
                     <img src="./images/Group 634.svg" alt="comments">
-                    <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                    <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                    <a href="#"><img class="footer-img" src="./images/Group 627.svg">10 comments</a>
+                    <a href="#"><img class="footer-img" src="./images/Group 628.svg">3 files</a>
+                </footer>
+            </article>
+
+            <article class="task">
+                <div class="tasks-header">
+                    <span class="priority-high">High</span>
+                    <button><img src="./images/_. ..svg" alt="more"></button>
+                </div>
+                <h3>Wireframes</h3>
+                <p>Low fidelity wireframes include the most basic content and visuals.</p>
+                <footer>
+                    <img src="./images/Group 634.svg" alt="comments">
+                    <a href="#"><img class="footer-img" src="./images/Group 627.svg">5 comments</a>
+                    <a href="#"><img class="footer-img" src="./images/Group 628.svg">8 files</a>
+                </footer>
+            </article>
+
+            <article class="task">
+                <div class="tasks-header">
+                    <span class="priority-low">Low</span>
+                    <button><img src="./images/_. ..svg" alt="more"></button>
+                </div>
+                <h3>Prototyping</h3>
+                <p>Interactive prototypes demonstrate how users will interact with the product.</p>
+                <footer>
+                    <img src="./images/Group 634.svg" alt="comments">
+                    <a href="#"><img class="footer-img" src="./images/Group 627.svg">3 comments</a>
+                    <a href="#"><img class="footer-img" src="./images/Group 628.svg">0 files</a>
                 </footer>
             </article>
 
             </section>  
 
             <section class="kanban-column">
-                <header>
+                <header class="on-progress">
                     <img src="./images/Ellipse 12.svg" alt="ellipse">
                     <h2>On Progress</h2>
                     <span class="count">3</span>
                 </header>
 
                 <article class="task">
-                    <span class="priority-low">Low</span>
-                    <button><img src="./images/_. ..svg" alt="more"></button>
+                    <div class="tasks-header">
+                        <span class="priority-low">Low</span>
+                        <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
                     <h3>Onboarding Illustrations </h3>
                     <img src="./images/unsplash_MicqqGyDQ6w.svg" alt="image">
                     <footer>
                         <img src="./images/Group 633.svg" alt="comments">
-                        <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                        <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">14 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">15 files</a>
                     </footer>
                 </article>
 
                 <article class="task">
-                    <span class="priority-low">Low</span>
-                    <button><img src="./images/_. ..svg" alt="more"></button>
+                    <div class="tasks-header">
+                        <span class="priority-low">Low</span>
+                        <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
                     <h3>Moodboard</h3>
-                    <img src="./images/unsplash_BS_1XGRkIH4.svg" alt="image">
-                    <img src="./images/unsplash_KIqJfzbII9w.svg" alt="image">
+                    <div class="moodboard-images">
+                        <img src="./images/unsplash_BS_1XGRkIH4.svg" alt="image">
+                        <img src="./images/unsplash_KIqJfzbII9w.svg" alt="image">
+                    </div>
                     <footer>
                         <img src="./images/Group 633.svg" alt="comments">
-                        <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                        <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">9 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">10 files</a>
                     </footer>
                 </article>
+
+                <article class="task">
+                    <div class="tasks-header">
+                        <span class="priority-low">Low</span>
+                        <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
+                    <h3>Design </h3>
+                    <img src="./images/design.png" alt="design" style="height: 150px; border-radius: 10px;">
+                    <footer>
+                        <img src="./images/Group 633.svg" alt="comments">
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">12 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">25 files</a>
+                    </footer>
+                </article>
+
             </section>
 
             <section class="kanban-column">
-                <header>
+                <header class="done">
                     <img src="./images/Ellipse 13.svg" alt="ellipse">
                     <h2>Done</h2>
                     <span class="count">2</span>
                 </header>
 
                 <article class="task">
-                    <span class="priority-completed">Completed</span>
-                    <button><img src="./images/_. ..svg" alt="more"></button>
+                    <div class="tasks-header">
+                        <span class="priority-completed">Completed</span>
+                        <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
                     <h3>Mobile App Design </h3>
                     <img src="./images/Mask.svg" alt="image">
                     <footer>
                         <img src="./images/Group 633.svg" alt="comments">
-                        <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                        <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">12 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">15 files</a>
                         </footer>
                 </article>
 
                 <article class="task">
+                    <div class="tasks-header">
                     <span class="priority-completed">Completed</span>
                     <button><img src="./images/_. ..svg" alt="more"></button>
+                    </div>
                     <h3>Design System</h3>
                     <p>It just needs to adapt the UI from what you did before</p>
                     <footer>
                         <img src="./images/Group 633.svg" alt="comments">
-                        <a href="#"><img src="./images/Group 627.svg">12 comments</a>
-                        <a href="#"><img src="./images/Group 628.svg">0 files</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 627.svg">12 comments</a>
+                        <a href="#"><img class="footer-img" src="./images/Group 628.svg">15 files</a>
                     </footer>
                 </article>
             </section>
